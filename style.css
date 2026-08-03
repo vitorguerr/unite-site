@@ -1,0 +1,228 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #2a2a2a;
+  line-height: 1.6;
+  background: #faf9f7;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; }
+
+a { color: inherit; }
+
+/* Topo */
+.topo {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  z-index: 50;
+  overflow: visible;
+}
+
+.topo-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  overflow: visible;
+}
+
+.logo-topo {
+  height: 90px;
+  margin-bottom: -28px;
+  position: relative;
+  z-index: 60;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+}
+
+.topo nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.topo nav a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.topo nav a:hover { color: #6b4c7a; }
+
+.btn-sistema {
+  background: #6b4c7a;
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-sistema:hover { background: #573d64; }
+
+/* Hero */
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-conteudo { max-width: 640px; }
+
+.hero h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 20px;
+}
+
+.hero-frase {
+  font-style: italic;
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.hero-autor {
+  font-style: italic;
+  margin-bottom: 28px;
+  opacity: 0.85;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.btn-whatsapp:hover { background: #1ebe57; }
+
+/* Seções */
+.secao { padding: 72px 0; }
+.secao-clara { background: white; }
+
+.secao h2 {
+  font-size: 2rem;
+  color: #6b4c7a;
+  margin-bottom: 12px;
+}
+
+.secao-intro {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.sobre-grid p { margin-bottom: 16px; color: #444; }
+
+.sobre-foto {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Galeria */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.galeria img:hover { transform: scale(1.03); }
+
+/* Contato */
+.contato { background: #f0ebf3; }
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.contato p { margin-bottom: 12px; font-size: 1.05rem; }
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #6b4c7a;
+  font-weight: 600;
+}
+
+.redes a:hover { text-decoration: underline; }
+
+.contato-foto {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Rodapé */
+.rodape {
+  background: #2a2a2a;
+  color: #ccc;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.logo-rodape {
+  height: 32px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.rodape p { font-size: 0.85rem; margin-bottom: 12px; }
+
+.link-sistema-rodape {
+  color: #aaa;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .sobre-grid, .contato-grid {
+    grid-template-columns: 1fr;
+  }
+  .topo-conteudo { flex-direction: column; gap: 10px; }
+  .topo nav { justify-content: center; }
+  .hero { min-height: 90vh; text-align: center; }
+  .hero-conteudo { margin: 0 auto; }
+}
