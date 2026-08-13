@@ -1,8 +1,9 @@
 import os
 from PIL import Image, ImageOps
 
-origem = r"E:\Projetos\unite-site\fotos-originais"
-destino = r"E:\Projetos\unite-site\img"
+base = os.path.dirname(os.path.abspath(__file__))
+origem = os.path.join(base, "fotos-originais")
+destino = os.path.join(base, "img")
 os.makedirs(destino, exist_ok=True)
 
 escolhidas = {
