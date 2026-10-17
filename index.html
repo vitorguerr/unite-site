@@ -16,98 +16,147 @@
 
 <link rel="icon" href="img/logo.png" />
 <link rel="stylesheet" href="style.css" />
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
 <header class="topo">
-  <div class="container topo-conteudo">
-    <img src="img/logo.png" alt="Unité" class="logo-topo" />
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#estrutura">Estrutura</a>
-      <a href="#contato">Contato</a>
-      <a href="https://app.unitepilates.com.br" class="btn-sistema" target="_blank" rel="noopener">Acessar Sistema</a>
-    </nav>
-  </div>
+  <a href="#inicio" class="logo-link"><img src="img/logo.png" alt="Unité" class="logo-topo" /></a>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#estrutura">Estrutura</a>
+    <a href="#contato">Contato</a>
+    <a href="https://app.unitepilates.com.br" class="btn-sistema" target="_blank" rel="noopener">Acessar Sistema</a>
+  </nav>
 </header>
 
-<section class="hero" style="background-image: linear-gradient(rgba(30,20,10,0.55), rgba(30,20,10,0.55)), url('img/hero-sala.jpg');">
-  <div class="container hero-conteudo">
-    <h1>Reestruture seu corpo com Pilates Funcional</h1>
-    <p class="hero-frase">"Poucos movimentos bem feitos, realizados de forma correta e equilibrada valem por muitas horas de ginástica."</p>
-    <p class="hero-autor">— Joseph Pilates</p>
-    <a href="https://wa.me/554630251511" class="btn-whatsapp" target="_blank" rel="noopener">Agendar aula experimental</a>
-  </div>
-</section>
+<div class="palco">
 
-<section id="sobre" class="secao">
-  <div class="container sobre-grid">
-    <div>
-      <h2>Sobre a Unité</h2>
-      <p>
-        A Unité é um centro de reestruturação corporal especializado em Pilates Funcional, em Pato Branco/PR.
-        Trabalhamos com atendimento personalizado, em turmas pequenas, para que cada aluno evolua no seu próprio ritmo
-        — seja para ganhar força e flexibilidade, cuidar da postura, se recuperar de uma lesão ou simplesmente
+  <aside class="vitrine" aria-hidden="true">
+    <img src="img/hero-sala.jpg" alt="" class="vitrine-img ativa" data-cena="inicio" />
+    <img src="img/cadillac.jpg" alt="" class="vitrine-img" data-cena="cadillac" />
+    <img src="img/reformer.jpg" alt="" class="vitrine-img" data-cena="reformer" />
+    <img src="img/chair.jpg" alt="" class="vitrine-img" data-cena="chair" />
+    <img src="img/barrel-ladder.jpg" alt="" class="vitrine-img" data-cena="barrel" />
+    <img src="img/trx.jpg" alt="" class="vitrine-img" data-cena="trx" />
+    <img src="img/logo-parede.jpg" alt="" class="vitrine-img" data-cena="contato" />
+  </aside>
+
+  <main class="coluna">
+
+    <section id="inicio" class="bloco bloco-hero" data-cena="inicio">
+      <img src="img/hero-sala.jpg" alt="Sala de Pilates da Unité com Cadillac e piso de madeira" class="foto-mobile" />
+      <h1 class="rv">Reestruture seu corpo</h1>
+      <p class="hero-frase rv">“Poucos movimentos bem feitos, realizados de forma correta e equilibrada valem por muitas horas de ginástica.” Joseph Pilates</p>
+      <a href="https://wa.me/554630251511" class="btn-principal rv" target="_blank" rel="noopener">Agendar aula experimental</a>
+      <p class="hero-nota rv">Pilates Funcional em Pato Branco/PR, em turmas pequenas.</p>
+    </section>
+
+    <section id="sobre" class="bloco bloco-sobre" data-cena="inicio">
+      <h2 class="rv">Cada aluno evolui no seu ritmo</h2>
+      <p class="rv">
+        A Unité é um centro de reestruturação corporal especializado em Pilates Funcional. O atendimento é personalizado,
+        em turmas pequenas, seja para ganhar força e flexibilidade, cuidar da postura, se recuperar de uma lesão ou
         melhorar a qualidade de vida.
       </p>
-      <p>
+      <p class="rv">
         A responsável técnica é <strong>Patrícia de Oliveira Guerra</strong>, fisioterapeuta com formação
         específica em Pilates, TRX e Core 360°.
       </p>
-      <p>
-        Nosso espaço conta com duas salas amplas e equipamentos completos — Cadillac, Reformer, Chair, Barrel,
-        Ladder e TRX — para que cada aula seja adaptada ao que o seu corpo precisa.
-      </p>
-    </div>
-    <img src="img/recepcao-certificados.jpg" alt="Recepção da Unité com certificados" class="sobre-foto" />
-  </div>
-</section>
+      <img src="img/recepcao-certificados.jpg" alt="Recepção da Unité com os certificados da equipe" class="foto-grande rv" />
+    </section>
 
-<section id="estrutura" class="secao secao-clara">
-  <div class="container">
-    <h2>Nossa Estrutura</h2>
-    <p class="secao-intro">Espaço amplo, equipamentos completos e um ambiente pensado para o seu bem-estar.</p>
-    <div class="galeria">
-      <img src="img/cadillac.jpg" alt="Cadillac" />
-      <img src="img/reformer.jpg" alt="Reformer" />
-      <img src="img/chair.jpg" alt="Cadillac Chair" />
-      <img src="img/barrel-ladder.jpg" alt="Barrel e Ladder" />
-      <img src="img/reformer-torre.jpg" alt="Torre/Reformer" />
-      <img src="img/cadillac-detalhe.jpg" alt="Cadillac - detalhe" />
-      <img src="img/trx.jpg" alt="TRX" />
-      <img src="img/recepcao.jpg" alt="Recepção" />
-      <img src="img/corredor.jpg" alt="Corredor do studio" />
-      <img src="img/sala-tv.jpg" alt="Sala de aula" />
-    </div>
-  </div>
-</section>
+    <section id="estrutura" class="bloco bloco-estrutura">
+      <h2 class="rv">Duas salas, equipamentos completos</h2>
 
-<section id="contato" class="secao contato">
-  <div class="container contato-grid">
-    <div>
-      <h2>Vem pra Unité</h2>
-      <p>📍 Rua Aimoré, 1467 — Pato Branco/PR<br />Junto ao Colégio Mater Dei</p>
-      <p>📞 (46) 3025-1511</p>
-      <div class="redes">
-        <a href="https://wa.me/554630251511" target="_blank" rel="noopener">WhatsApp</a>
+      <article class="item" data-cena="cadillac">
+        <img src="img/cadillac.jpg" alt="Cadillac" class="foto-mobile" />
+        <h3 class="rv">Cadillac</h3>
+        <p class="rv">Estrutura com barras e molas que permite exercícios deitado, sentado ou em pé, com a aula ajustada a cada corpo.</p>
+      </article>
+
+      <article class="item" data-cena="reformer">
+        <img src="img/reformer.jpg" alt="Reformer" class="foto-mobile" />
+        <h3 class="rv">Reformer</h3>
+        <p class="rv">Carrinho deslizante com molas, para trabalhar força, alongamento e controle do movimento.</p>
+      </article>
+
+      <article class="item" data-cena="chair">
+        <img src="img/chair.jpg" alt="Chair" class="foto-mobile" />
+        <h3 class="rv">Chair</h3>
+        <p class="rv">Banco com pedal e molas, que exige equilíbrio e estabilidade do centro do corpo.</p>
+      </article>
+
+      <article class="item" data-cena="barrel">
+        <img src="img/barrel-ladder.jpg" alt="Barrel e Ladder" class="foto-mobile" />
+        <h3 class="rv">Barrel e Ladder</h3>
+        <p class="rv">Arcos e escada para alongar a coluna, abrir o peito e ganhar mobilidade.</p>
+      </article>
+
+      <article class="item" data-cena="trx">
+        <img src="img/trx.jpg" alt="TRX" class="foto-mobile" />
+        <h3 class="rv">TRX</h3>
+        <p class="rv">Fitas suspensas que usam o peso do próprio corpo para fortalecer o corpo todo.</p>
+      </article>
+    </section>
+
+    <section id="contato" class="bloco bloco-contato" data-cena="contato">
+      <h2 class="rv">Vem pra Unité</h2>
+      <p class="contato-grande rv">Rua Aimoré, 1467<br />Pato Branco/PR</p>
+      <p class="contato-grande rv"><a href="tel:+554630251511">(46) 3025-1511</a></p>
+      <p class="rv">O studio fica junto ao Colégio Mater Dei, em Pato Branco.</p>
+      <div class="redes rv">
+        <a href="https://wa.me/554630251511" class="btn-principal" target="_blank" rel="noopener">Chamar no WhatsApp</a>
         <a href="https://instagram.com/unite_pilates" target="_blank" rel="noopener">Instagram @unite_pilates</a>
         <a href="https://facebook.com/unitepatobranco" target="_blank" rel="noopener">Facebook</a>
       </div>
-    </div>
-    <img src="img/logo-parede.jpg" alt="Unité - centro de reestruturação corporal" class="contato-foto" />
-  </div>
-</section>
+      <img src="img/logo-parede.jpg" alt="Logotipo da Unité na parede de madeira do studio" class="foto-mobile" />
+    </section>
 
-<footer class="rodape">
-  <div class="container">
-    <img src="img/logo.png" alt="Unité" class="logo-rodape" />
-    <p>&copy; <span id="ano"></span> Unité - Centro de Reestruturação Corporal. Todos os direitos reservados.</p>
-    <a href="https://app.unitepilates.com.br" target="_blank" rel="noopener" class="link-sistema-rodape">Acessar Sistema</a>
-  </div>
-</footer>
+    <footer class="rodape">
+      <img src="img/logo.png" alt="Unité" class="logo-rodape" />
+      <p>&copy; <span id="ano"></span> Unité - Centro de Reestruturação Corporal. Todos os direitos reservados.</p>
+      <a href="https://app.unitepilates.com.br" target="_blank" rel="noopener" class="link-sistema-rodape">Acessar Sistema</a>
+    </footer>
+
+  </main>
+</div>
 
 <script>
   document.getElementById('ano').textContent = new Date().getFullYear();
+
+  (function () {
+    var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var alvos = document.querySelectorAll('.rv');
+
+    if (!('IntersectionObserver' in window) || reduz) {
+      alvos.forEach(function (el) { el.classList.add('visivel'); });
+    } else {
+      var ioRv = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var irmaos = Array.prototype.slice.call(e.target.parentNode.querySelectorAll(':scope > .rv'));
+          e.target.style.transitionDelay = (irmaos.indexOf(e.target) * 70) + 'ms';
+          e.target.classList.add('visivel');
+          ioRv.unobserve(e.target);
+        });
+      }, { threshold: 0.15 });
+      alvos.forEach(function (el) { ioRv.observe(el); });
+    }
+
+    // A foto fixa acompanha a parte da página que está na tela.
+    var imgs = document.querySelectorAll('.vitrine-img');
+    var cenas = document.querySelectorAll('[data-cena]:not(.vitrine-img)');
+    function trocar(nome) {
+      imgs.forEach(function (im) { im.classList.toggle('ativa', im.getAttribute('data-cena') === nome); });
+    }
+    if ('IntersectionObserver' in window) {
+      var ioCena = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (e) { if (e.isIntersecting) trocar(e.target.getAttribute('data-cena')); });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      cenas.forEach(function (el) { ioCena.observe(el); });
+    }
+  })();
 </script>
 
 </body>
