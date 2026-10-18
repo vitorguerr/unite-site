@@ -184,7 +184,8 @@ h3 { font-size: clamp(1.8rem, 2.6vw, 2.6rem); line-height: 1.05; margin-bottom: 
   .logo-topo { height: 44px; }
   .topo nav { gap: 16px; }
   .topo nav a { font-size: 0.9375rem; }
-  .btn-sistema { display: none; }
+  .topo nav a:nth-child(-n+2) { display: none; }
+  .btn-sistema { padding: 8px 14px; font-size: 0.875rem; }
 
   .palco { display: block; }
   .vitrine { display: none; }
