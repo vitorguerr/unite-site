@@ -1,3 +1,8 @@
 # Fotos originais (arquivos grandes, não usados pelo site publicado)
 fotos-originais/
 fotos/
+
+# playwright-cli (sessões descartáveis, não versionar)
+.playwright-cli/
+# histórico da taste skill (local, não versionar)
+.taste-skill/
